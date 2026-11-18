@@ -380,6 +380,81 @@
       opacity: 0; pointer-events: none; transition: opacity 0.2s ease;
     }
     .toast.show { opacity: 1; }
+    
+/* ANGEL LANGUAGE PROFESSIONAL RESPONSIVE FIX */
+
+html,
+body {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  align-items: stretch;
+}
+
+.phone-shell {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.app-bar {
+  width: 100%;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.brand {
+  flex: 1;
+  min-width: 0;
+}
+
+.top-badges {
+  flex-shrink: 0;
+  gap: 0.3rem;
+}
+
+.app-content {
+  width: 100%;
+  min-width: 0;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screen,
+.card {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.flag-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (min-width: 540px) {
+  .phone-shell {
+    max-width: 460px;
+    height: 860px;
+    min-height: 760px;
+    max-height: 94vh;
+    border-radius: 34px;
+  }
+}
+
   </style>
 </head>
 <body>
